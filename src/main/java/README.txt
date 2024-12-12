@@ -36,10 +36,18 @@ a spring bean is an instance of a class managed by the spring container
 
 the container decide when to create and delete the "beans" or instance of those classes
 
+beans are defined by the @Component annotation, most of the annotations we will use
+such as @Service @Repository @RestController/@Controller,
+
+@Entity is not a bean and is not apart of the spring framework but is apart of the JPA
+and if the class we require needs to be apart of both we can use the @Entity and @Component to
+enable both on that class so the ioc container can manage this class as well
+
 
 What is the spring IOC Container?
 
-
+the ioc container is a core concept of the Spring framework, it's responsible for creating initializing and
+managing the beans one of the main purposes of this container is to preform the Dependency injections
 
 
 What does  @SpringBootApplication do?
